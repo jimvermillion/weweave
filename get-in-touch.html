@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head and title area-->
+<head>
+<title>We Weave : GET IN TOUCH</title>
+<link href="css/weweave.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+</head>
+
+<!--start of body-->
+<body>
+
+<!--header at the top-->
+<header>
+	
+<!--navigation area in header-->
+  <ul id="nav">
+     	<li><a href="index.html">home</a></li>
+     	<li><a href="about.html">about</a></li>
+     	<li><a href="gallery.html">gallery</a></li>
+     	<li><a id="here" href="get-in-touch.html">get in touch</a></li>
+  </ul>
+</header>
+
+
+<!--main area for form-->
+<main>
+	<div class="touch">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img class=homePic src="images/weweaveTouch.jpg" alt="WE WEAVE home graphic" 
+						width="300" height="250">
+	<p>					
+	Hello!  Thanks for visiting.  If you'd like to inquire about purchasing work from the 
+	gallery page, or about commission proposals -- please do so in the form.  I appreciate and 
+	consider all offers on my work.
+	<br><br>
+	-Kata
+	</p>
+				</div>
+	
+	<!--here is the form implementation-->
+				<div class="col-md-7">	
+					<h1>Get In Touch</h1>
+    				<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+  					  <ul>
+    				    <li><label for="myName">Name:</label></li>
+						<ul class="formDisplay">
+    					  <li><input type="text" name="myName" id="myName"></li><li id="nameComment" class="comment"></li>
+						</ul>
+    					<li><label for="myEmail">E-mail:</label></li>
+						<ul class="formDisplay">
+	    				  <li><input type="text" name="myEmail" id="myEmail"></li><li id="emailComment" class="comment"></li>
+						</ul>
+    					<li><label for="myComments">Comments:</label></li>
+    					<li><textarea name="myComments" id="myComments" rows="9" cols="50"></textarea></li>
+						<li><input id="mySubmit" type="submit" value="Submit"></li>
+  					   	</ul>
+					</form>
+				</div>
+			</div>		
+		</div>
+	</div>
+</main>
+
+<!--footer at bottom with copyright and email-->
+<footer>
+  <p>Copyright &copy; 2015 We Weave</p>
+  <a href="mailto:jamesvermillion@yahoo.com">jamesvermillion@yahoo.com</a>
+</footer>
+
+<!--script-->
+<script src="js/getintouch.js" type="text/javascript"></script>
+
+
+</body>
+</html>

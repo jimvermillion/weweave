@@ -1,0 +1,277 @@
+/*Style Sheet for WeWeave template by Jim Vermillion*/
+
+/*sets the global style of the background color, text color, and font */
+body { 
+	   background-color: #ffffff; 
+       color: #708090; 
+       font-family: Verdana, Arial, sans-serif; 
+       max-width: 1920px;
+       }
+
+/*sets a different background color, text color, and aligns text
+center for the header element*/
+header { display: block;
+         height: 50px;
+         border-radius: 9px;
+         margin-top: 10px;
+         background-color: #A9A9A9; 
+       }
+/* sets up some rules for navigation at the top of the page */
+#nav{ margin: 0px;
+	  padding: 0px;
+	  text-align: center; 
+      font-weight: bold;
+      font-size: 1.2em;	
+    }
+#nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #A9A9A9; 
+}
+#nav li{
+	  display: inline-block;
+	  text-align: center;
+	  margin: 10px 30px; 
+}
+/* nav linking instructions to change color depending on state */
+#nav a { text-decoration: none;
+        padding: 15px; 
+}
+#nav a:link { color: #D3D3D3; }
+#nav a:visited { color: #D3D3D3; } 
+#nav a:hover { color: #FFE4E1; 
+			  background-color: #D3D3D3;
+			  border-radius: 3px;
+			  padding-top: 10px;	
+			  padding-bottom: 16px;
+			  text-decoration: none;
+}
+
+			  
+/*CONSISTANT MAIN*/
+main {
+	margin-top: 30px;
+	max-width: 1280px;
+}
+
+
+/*INDEX CSS RULES*/
+/* centers the home graphic*/
+#homeImage{
+	position: fixed;
+	left: 24%;
+	z-index:1000;
+	width: 50%;
+}
+#home .row{
+	margin: 0;
+	padding: 0;
+}
+#home .container{
+	min-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#home .col-md-6{  
+	display: block;
+    min-height: 480px;
+    margin: 0;
+    padding: 0;
+}
+#home .col-md-6 ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/*absolute so the js doesn't get funky justify the pics left*/
+#home .col-md-6 li { 
+    position: absolute;
+    margin-left: 0;
+}		
+/* centers the text under the home graphic */	       
+#homeQuote { 
+		  display: block;
+    	  text-align: center;
+    	  font-size: .80em;
+    	  margin: 11px auto;
+    	  color: #A9A9A9;
+    	  border: 1px solid #A9A9A9;
+    	  width: 25%;
+    	  }
+
+
+
+/* ABOUT PAGE */
+#about{color: #708090;
+	   margin: 40px 0 54px;
+}
+#about .col-md-4{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#about img {
+	display: block;
+	margin: 10px auto;
+}
+#about h1 { text-align: center; 
+		    padding-bottom: 10px; }
+#about ul { width: 80%;
+			display: block;
+			margin: 0 auto;
+			padding-top: 20px;
+			list-style-type: none;
+			text-align: left;
+			border: 1px solid #708090;
+			font-size: .8em;
+			}
+			
+#about .col-md-4 li { 
+			margin-bottom: 35px;
+			margin-right: 20px; 			
+}
+	
+			
+ 
+/*GALLERY PAGE CSS RULES*/
+
+#gallery .row{
+	margin: 2px 0 7px;
+}
+#gallery .col-md-6{
+	margin-bottom: 25px;
+}
+#gallery .col-md-2{
+	margin-bottom: 5px;
+}
+#gallery img{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+#showPic { 			 text-align: right;
+                     font-size: .55em;
+                     font-family: Verdana, Arial, sans-serif;
+                     font-weight: bold;
+				     padding: 5px;
+				     display: inline-block;
+                     position: absolute;
+                     top: 88px;
+                     left: 668px;
+                     }
+
+
+
+/*GET IN TOUCH PAGE*/
+/*sets up get in touch page text*/
+.touch .container{
+		margin: 0;
+		padding: 0;
+}
+.touch .col-md-5{   
+           display: block;
+           margin:0;
+           padding: 0;
+           }
+.touch .row{margin-top: 13px;
+			margin-left: 230px;
+}
+.touch p{
+			display: block;
+			margin: 0 auto 20px;
+			width: 80%;	
+			padding-left: 20px;
+			padding-top: 10px;	
+}     
+.touch img{
+		display: block;
+		margin: auto;
+}
+/* sets up display rules for the form page */
+.touch .col-md-7 {  
+		 display: block;
+		 font-size: .8em;
+         padding: 40px 0 16px;
+         margin: 20px 0 100px;        
+}
+/*let's make the headline bigger*/
+form h1 { font-size: 2.50em; 
+		  margin-top: 10px;
+}
+/* gets rid of the pesky bullets */
+form ul { list-style-type: none;}
+.formDisplay li{
+	display: inline;
+	list-style: none;
+}
+.comment{
+	color: #F08080;
+	margin-left: 15px;
+}
+
+
+/*style for the footer background color, text color, small font, italics
+and centered text.*/
+footer   { display: block;
+		   background: #A9A9A9;
+           color: #D3D3D3;
+           font-size: .60em;
+           font-style: italic;
+           text-align: center;
+           padding: 20px ;
+           border-radius: 9px;
+		  }
+footer p{
+	padding: 0;
+	margin: 0;
+}
+/*sets the link visited and hover for footer email link*/
+footer a:link { color: #D3D3D3; }
+footer a:visited { color: #f2eab7;
+}
+footer a:hover { color: #FFE4E1; 
+				 padding: 25px 0 20px;
+}    
+
+/*vertical phones*/ 
+@media(max-width: 500px){
+	/*header background was inconsistant so we'll make it white*/
+	header{background-color: #fff;}
+	
+	/*also kill the footer background for consistancy*/
+	footer{background-color: #fff;}
+	
+	/*enough space and separation with nav bars*/
+	#nav li{
+		margin: 10px 76px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #A9A9A9;
+	}
+	
+	/*make the main area further down since the block nav list goes furter*/
+	main{
+		margin-top: 190px;
+		padding: 40px 0 10px;
+		border-bottom: 1px solid #A9A9A9;
+		border-top: 1px solid #A9A9A9;
+	}
+	
+	/*the hover trick is useless on a phone--so lets kill it*/
+	#showPic{display: none;}
+	
+	/*push the getintouch page back left*/
+	.touch .row{margin-left: 0;}
+	
+	/*increase the size of the homeQuote so it fits better*/
+	#homeQuote{
+		width: 50%;	}
+	/*make the comment area fit the confines of a vertical phone*/
+	textarea{
+	width: 240px;
+	}
+	/*more room for about page's main*/
+	#about {
+		margin-top: 180px;
+	}
+}
